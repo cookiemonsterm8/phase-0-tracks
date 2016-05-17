@@ -12,3 +12,5 @@ margin-bottom: 20px;
 
 .job_list { font-size: .8em;
  }
+::selection { color: blue; }
+section > section {font-size: .35em}
