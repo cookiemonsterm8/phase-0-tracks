@@ -1,0 +1,23 @@
+Name at least three categories of CSS adjustments (example: colors)?
+
+Width, Height. 
+
+What are the three ways to link a CSS rule to an HTML document? Which one is the best and why?
+
+Link(have a css style sheet where the styling is kept), inline styling(where you can apply something to one item), and internal style sheet(you put the code directly on the HTML page). It's best to use the linking to the CSS file because it can span over all your pages and is also not as limited as the other methods.
+
+What is a selector? Give examples of at least three types of selectors.
+
+Selectors are elements like body, h1 etc that tell the CSS sheet what part of the page you want to style.
+
+What is the box model?
+
+It's the box that surrounds the HTML page .
+
+Explain and give an example of the cascading effect of CSS.
+
+Cascading is when more than one stylesheet rule can apply to one item on the page and the page decides by cascading through the rules from top to bottom to find the more specific one. 
+
+Name two CSS techniques that assist in responsive design.
+Width 
+Padding
