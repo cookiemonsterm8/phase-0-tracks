@@ -1,0 +1,17 @@
+-Navigate to elevator at location x.
+-If going up:
+	-press the up button
+-If going down:
+	-press the down button.
+-Once in elevator, navigate toward control panel.
+-If going up:
+	-press the 2 button
+	-navigate off the elevator
+-Otherwise: 
+-press the 3 button
+-navigate off the elevator
+-If going down:
+	-press the B button
+	-navigate off the elevator
+-Otherwise press the LL button
+	-navigate off the elevator
