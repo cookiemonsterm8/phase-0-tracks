@@ -1,0 +1,44 @@
+1. What is a variable? Why might a programmer use a variable?
+Something you set the value for. A programmer can use them to save time and space coding.
+
+2. If the value of first_name is "Abraham" and last_name is "Lincoln", explain the order in which Ruby will run the line full_name = first_name + last_name, and what the final result will be.
+It will run the last_name + the first_name and display it as Abraham Lincoln.
+
+Data Types
+3. For each of the following data types, write a short definition and give at least one example of when you might use the data type in a program. (Don't use an example we've already provided.)
+
+string:  text - password
+integer: numbers and negative numbers - my birthday
+float: Numbers with decimals - money
+nil: nothing -when a variable hasn't been assigned anything - if you have a questionnaire
+boolean: true and false values - are you from Chicago?
+Algorithms -An algorithm is a set of steps to solve a problem or accomplish a task. - counting up or giving new users instructions on an application.
+4. What is an algorithm? An algorithm is a set of steps to solve a problem or accomplish a task.
+
+5. What are two common categories of algorithm in computer science? 
+searching and sorting
+
+Methods
+6. What is a method? Why might a programmer choose to use a method? reusable piece of code that does something. It can ask for a user's email and password to display something. 
+
+7. Define the following terms as they relate to a method. 
+
+return value - every method returns a value in ruby. 
+side effect-functions or expressions
+parameter-variables in parentheses when method is being defined.
+argument-arguments are the items that the variable is defining.
+implicit return-the value of the last expression in a statement. 
+8. What are global scope and method scope? How do those scopes impact the availability of data at different points in a program?
+Global - available throughout program
+Local- depends on scope, could just apply to one small section. 
+Control Flow
+9. What is control flow? Why might a programmer choose to use flow control?
+Allows you to select different outcomes based on user input. If they have a form or something that requires user input to be interpreted yet there is no one answer that the user must give. 
+10. Define the following terms as they relate to flow control.
+
+loop- executes blocks of code while their conditions are met. 
+if-takes booleans and executes code based off of whether or not the data is true or false
+else-must be paired with if and will run if the previous condition is not met
+elsif-must be paired with if and will run if previous statement's conditions arent met and if it's conditions are met.
+while- as long as the condition is true run the code. 
+until- until the condition is true, run the code. 
