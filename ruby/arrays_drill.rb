@@ -1,3 +1,15 @@
+def add_to_array(array, thing) 
+array << thing
+end
+p add_to_array( [], "this is great")
+p add_to_array(["tacos", "Burritos", "salsa"], "mexican food is great")
+p add_to_array([1,2,3,3, "I declare a thumb war"], "you lose")
+
+def build_array(item_1, item_2, item_3)
+[item_1, item_2, item_3]
+end
+p build_array("dog", "cat", "horse")
+
 cool_array = []
 p cool_array
 cool_array << "dog"
