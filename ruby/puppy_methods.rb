@@ -21,6 +21,8 @@ class Puppy
 		puts "PLAY DEAD!"
 	end
 
+	def initialize
+		puts "Initializing new puppy instance.."
 end
 
 puppy = Puppy.new
@@ -34,6 +36,9 @@ puppy.roll_over
 puts puppy.dog_years 9
 
 puppy.play_dead
+
+
+
 
 
 
