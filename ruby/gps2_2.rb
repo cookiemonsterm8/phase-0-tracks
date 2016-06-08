@@ -66,3 +66,25 @@ update_quantity(grocery, "Ice Cream", 1)
 # output: hash
 
 p grocery.each{|key,value| puts "We need #{value} #{key}."}
+
+#On your own, add a commented reflection section to your gps2_2.rb file. Answer the following questions in your reflection:
+
+#What did you learn about pseudocode from working on this challenge?: 
+#I learned that it is VERY important and a really great habit to get into so I can track if and when things go wrong.
+
+#What are the tradeoffs of using arrays and hashes for this challenge? 
+#We found it easier to use a hash because we wanted our code to work easily whether we had an item or a million items and needing to index things would be a bit tedious in larger lists.
+
+#What does a method return?
+#methods return behaviors we've defined for ruby to do whenever we call them. 
+
+#What kind of things can you pass into methods as arguments?
+#required arguments
+#arguments with default values
+#optional arguments
+
+#How can you pass information between methods?
+#you have to set one of the methods as a defined variable
+
+#What concepts were solidified in this challenge, and what concepts are still confusing?
+#how to call methods in other methods, Still grasping a bit with universal vs. local methods 
