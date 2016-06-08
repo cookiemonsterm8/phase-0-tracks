@@ -17,3 +17,17 @@
 #constant hunger
 #lazy
 
+class Puppy
+	end
+#ask what methods are available
+Puppy.methods
+
+Arwen = Puppy.new
+Opal = Puppy.new
+Fluffy = Puppy.new
+
+Fluffy.class
+Arwen == Opal
+Opal.instance_of?(Array)
+Opal.instance_of?(Puppy)
+
