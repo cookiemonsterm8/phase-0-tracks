@@ -13,10 +13,11 @@ class Hamster
 	# 	@name
 	# end
 	
+	#
 	def noise=(new_noise)
 		@noise = new_noise
 	end
-	
+	#
 	def noise
 		@noise
 	end
@@ -34,8 +35,15 @@ class Hamster
 	end
 	
 	def adoptability
-		@adoptability
+		if @adoptability == true
+		"adoptable"
+		else
+		"not adoptable"
+		end
+	
 	end
+
+ 
 	
 	def age=(new_age)
 		@age = new_age
@@ -44,7 +52,14 @@ class Hamster
 	def age
 		@age
 	end
-	
+def results
+	if @adoptability == true 
+	puts "adoptable"
+	else puts "not adoptable"
+	end
+	p (ham)
+end
+
 end
 
 ham = Hamster.new
@@ -64,20 +79,23 @@ survey_fur = gets.chomp
 ham.fur = (survey_fur)
 ham.fur
 
-
+#changing from string survey_adoptability to boolean adoptable
 puts "Do you believe your hamster to be a good candidate for adoption?(True/False)"
-survey_adoptability = gets.chomp
-ham.adoptability = (survey_adoptability)
-ham.adoptability
+survey_adoptability = gets.chomp.downcase
+if survey_adoptability == "true" 	
+	adoptable = true
+	else adoptable = false
+end	
+
+ham.adoptability = (adoptable)
 
 puts "How old do you think your hamster may be?"
-age = gets.chomp
-if ham.adoptability == true 
-	puts "adoptable"
-	elsif puts "not adoptable"
-end
+survey_age = gets.chomp
+ham.age = (survey_age)
+
+
 puts "So, let us get this straight, #{ham.name} is: 
-#{ham.noise}, #{ham.fur}, #{ham.age}? "
+#{ham.noise}, #{ham.fur}, #{ham.adoptability} , #{ham.age}? "
 
 if ham.noise >= 5
 puts "It would seem that #{ham.name} is a bit noisy"
