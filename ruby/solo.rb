@@ -1,103 +1,32 @@
 class Video_game
-	attr_accessor :name
-	
-	def initialize
-		puts "Starting the Video_game Survey!"
-	end
-	
-	# def name=(new_name)
-	# 	@name = new_name
-	# end
-	
-	# def name
-	# 	@name
-	# end
-	
-	#
-	def noise=(new_noise)
-		@noise = new_noise
-	end
-	#
-	def noise
-		@noise
-	end
-	
-	def fur=(new_fur)
-		@fur = new_fur
-	end
-	
-	def fur
-		@fur
-	end
-	
-	def adoptability=(new_adoptability) 
-		@adoptability = new_adoptability
-	end
-	
-	def adoptability
-		if @adoptability == true
-		"adoptable"
-		else
-		"not adoptable"
-		end
-	
-	end
+	attr_reader :games, :console_type, :players, :username
+	attr_accessor :games, :console_type, :players, :username
 
- 
-	
-	def age=(new_age)
-		@age = new_age
+	def initialize(players, username)
+		@games = games
+		@console_type = console_type
+		@players = players
+		puts "Let's play a game..."
 	end
 	
-	def age
-		@age
+	def do_it
+		puts "May the odds be ever in your favor"
 	end
-def results
-	if @adoptability == true 
-	puts "adoptable"
-	else puts "not adoptable"
-	end
-	p (ham)
-end
 
 end
 
-ham = Hamster.new
+#starting a new array for the program, leaving it empty for random inputs
+gamer_girl = []
+#giving some random combos for the array 
+gamer_girl << Video_game.new(2, "dog catcher")
+#giving examples of what can be put into the array
+example_games = ["kingsom hearts", "NBA Jam", "Tony Hawk's Underground", "Lord of the Rings: Fellowship of the Ring"]
+exapmle_console_type = ["PS2", "XBOX ONE", "PS3", "Gameboy Color", "Sega Genesis"]
+example_players = (0..4).to_a
 
- puts "What is your Hamsters name?"
- survey_name = gets.chomp
- ham.name = (survey_name)
- ham.name
-
-puts "On a scale of 1-10 how noisy is your hamster?"
-survey_noise = gets.chomp
-ham.noise = (survey_noise.to_i)
-ham.noise
-
-puts "What color fur does your hamster have?"
-survey_fur = gets.chomp
-ham.fur = (survey_fur)
-ham.fur
-
-#changing from string survey_adoptability to boolean adoptable
-puts "Do you believe your hamster to be a good candidate for adoption?(True/False)"
-survey_adoptability = gets.chomp.downcase
-if survey_adoptability == "true" 	
-	adoptable = true
-	else adoptable = false
-end	
-
-ham.adoptability = (adoptable)
-
-puts "How old do you think your hamster may be?"
-survey_age = gets.chomp
-ham.age = (survey_age)
-
-
-puts "So, let us get this straight, #{ham.name} is: 
-#{ham.noise}, #{ham.fur}, #{ham.adoptability} , #{ham.age}? "
-
-if ham.noise >= 5
-puts "It would seem that #{ham.name} is a bit noisy"
-	elsif puts "#{ham.name} is the perfect amount of noisy!"
-	end
+3.times do 
+games = example_games.sample
+console_type = exapmle_console_type.sample
+players = example_players.sample
+puts "So, we have #{players} playing #{games} on a #{console_type}? Sounds like fun!"
+end
