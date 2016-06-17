@@ -12,3 +12,12 @@ function reverse(string) {
 }
 
 reverse("AT-AT");
+
+//driver code that calls my function
+
+console.log (reverse("blah blah"));
+
+var reverse_my_words = reverse("My words");
+if (reverse_my_words == "sdrow yM") 
+	{console.log(reverse_my_words);}
+else {console.log("Does not compute")}
